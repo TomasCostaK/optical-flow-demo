@@ -16,7 +16,7 @@ import numpy as np
 # PARAMETERS------------------------------------------------------------------
 
 # path to input videofile
-vidpath = r""
+vidpath = "../../not_cheater.mp4"
 
 # do you want to save the video?
 savevid = True
@@ -25,7 +25,7 @@ savevid = True
 previewWindow = True
 
 # output video params
-fps = 20 # fps of output video, should match input video
+fps = 30 # fps of output video, should match input video
 
 # visualization parameters
 numPts = 5 # max number of points to track
@@ -84,7 +84,7 @@ old_points = cv.goodFeaturesToTrack(old_gray, maxCorners=numPts, mask=crosshairm
 if savevid:
     # path to save output video
     pathparts = vidpath.split('.')
-    savepath = '.'+ vidpath.split('.')[-2] + '_LK_FLOW' + '.mp4'
+    savepath = 'processed_videos/'+ vidpath[5:17] + '_LK_FLOW' + '.mp4'
     print(f"Saving Output video to: {savepath}")
 
     # get shape of video frames

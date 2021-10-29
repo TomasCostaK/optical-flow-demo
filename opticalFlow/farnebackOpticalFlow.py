@@ -15,7 +15,7 @@ import cv2 as cv
 # PARAMETERS--------------------------------
 
 # path to input video file
-vidpath = r""
+vidpath = "../../cheater.mp4"
 
 # do you want to save the output video?
 savevid = True
@@ -48,7 +48,7 @@ hsv_img[...,1] = 255
 # if saving video
 if savevid:
     # path to save output video
-    savepath = vidpath.split('.')[0] + '_FB_FLOW' + '.mp4'
+    savepath = 'processed_videos/' + vidpath[5:13] + '_FB_FLOW' + '.mp4'
 
     # get shape of video frames
     height, width, channels = old_frame.shape
