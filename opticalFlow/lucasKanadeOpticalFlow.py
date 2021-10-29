@@ -25,7 +25,7 @@ savevid = True
 previewWindow = True
 
 # output video params
-fps = 30 # fps of output video, should match input video
+fps = 20 # fps of output video, should match input video
 
 # visualization parameters
 numPts = 5 # max number of points to track
